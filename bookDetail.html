@@ -1,0 +1,139 @@
+<!-- RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Ngo Hai Van
+  ID: S3818275
+  Acknowledgement: 
+Lecture 1: https://rmit.instructure.com/courses/118544/modules/items/5035310
+Lecture 2: https://rmit.instructure.com/courses/118544/modules/items/5048535
+Lecture 3: https://rmit.instructure.com/courses/118544/modules/items/5056338
+Lecture 4: https://rmit.instructure.com/courses/118544/modules/items/5067828
+Lecture 5: https://rmit.instructure.com/courses/118544/modules/items/5079548
+Lecture 6: https://rmit.instructure.com/courses/118544/modules/items/5084877-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="Assest/CSS/style.css">
+   <link rel="stylesheet" href="Assest/themify-icons/themify-icons.css">
+   <link rel="stylesheet" href="Assest/CSS/responsive.css">
+
+    <title>Book detail</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+          <a class="hover" href="index.html"><img src="Assest/IMG/logo.png" alt="Logo">BOOK STORE</a>
+          <i id="mobie-menu" class="menu-icon hover ti-menu"></i>   
+        </div>
+        
+        <nav class="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Fiction</a></li>
+            <li><a href="category.html">Non-Fiction</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    </div>
+
+    <!-- main section for the detail -->
+
+    <!-- breakcumbs -->
+    <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="category.html">Category</a></li>
+        <li><a href="bookDetail.html">Book Detail</a></li>
+    </ul>
+
+    <!-- book information -->
+    <div class="book-detail">
+        
+        <div class="information box-container">
+                <div class="book-img box four">
+                    <img src="Assest/IMG/book.jpg" alt="image of the book">
+                </div>
+                <div class="sub-img box four">
+                    <img class="sub-image" src="Assest/IMG/book1.jpg" alt="another image of the book">
+                    <img class="sub-image" src="Assest/IMG/book2.jpg" alt="another image of the book">
+                    <img class="sub-image" src="Assest/IMG/book3.jpg" alt="another image of the book">
+                </div>
+                <div class="book-price box four">
+                    <p class="price">book price</p>
+                    <button class="cart">add to cart <i class="ti-shopping-cart"></i></button>
+                </div>
+        </div>
+    </div>
+
+    <!-- book description -->
+    <div class="description">
+        <p class="name">Book Name</p>
+        <p class="book-description">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fugiat, corrupti ad alias facilis voluptatum voluptate officia ab ipsam neque non? Doloribus saepe, eveniet dolor sed adipisci aliquam facilis nisi, dolore accusantium quasi voluptatibus, quod alias. Corrupti voluptatem cum, nostrum tempora quis assumenda officia eaque quidem eveniet itaque aspernatur fuga nisi laudantium doloremque impedit unde similique nam labore cumque qui! Iusto vel rerum amet praesentium, nisi architecto corporis molestiae. Esse, enim unde! Dolor tempora, aliquam necessitatibus veritatis vero provident quas? </p>
+    </div>
+
+    <!-- end of the main section for the detail -->
+
+    <div id="footer">
+        <div class="footer_narvigation">
+
+            <div class="box-container">
+
+                <div class="box four">
+                    <h3>About Us</h3>
+                    <p>about us information</p>
+                </div>
+
+                <div class="box four">
+                    <h3>Privacy Policy</h3>
+                    <p>Privacy Policy information</p>
+                </div>
+
+                <div class="box four">
+                    <h3>Terms</h3>
+                    <p>Terms information</p>
+                </div>
+
+                <div class="box four">
+                    <h3> Copyright</h3>
+                    <p> Copyright information</p>
+                </div>
+            </div>
+
+            <div class="Contact">
+                <p> Contact Us</p>
+                <a href="contact.html">
+                    <button class="button-contact">
+                        <p> click here <i class="ti-tablet"></i></p>
+                    </button>
+                </a>
+            </div>
+            <div style="text-align: center;">
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/Ywwg_eo9z6E" title="Discover RMIT University Library: set yourself up for study success">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        var header= document.getElementById("header");
+        var mobieMenu = document.getElementById("mobie-menu");
+        var currentHeader = header.clientHeight;
+        console.log(currentHeader)
+        mobieMenu.onclick= function (){
+            var isClose = header.clientHeight === 116;
+            if(isClose){
+                header.style.height = "auto";
+            }
+            else{
+                header.style.height = "116px"
+            }
+        }
+    </script>
+</body>
+</html>

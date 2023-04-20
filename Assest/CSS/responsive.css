@@ -1,0 +1,59 @@
+@media (max-width: 960px) {
+  header {
+    display: block;
+    position: relative;
+  }
+  .navigation ul {
+    display: block;
+  }
+
+  header .menu-icon {
+    position: absolute;
+    right: 30px; /* adjust the distance from the right edge of the viewport */
+    top: 30px; /* adjust the distance from the bottom edge of the viewport */
+  }
+  .navigation li {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+
+  .navigation li:hover {
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+  }
+
+  .navigation li a {
+    color: #03045e;
+  }
+
+  .box-container {
+    display: block;
+  }
+
+  .section .box-container .box {
+    margin: 20px 0;
+  }
+  .book-detail .sub-img img {
+    display: inline-block;
+  }
+  .sub-img {
+    display: inline-block;
+    margin: 10px 0px;
+  }
+  .book-detail .book-img img {
+    margin: 0 auto;
+  }
+  .book-detail .information .book-price > p {
+    margin-top: 0px;
+  }
+  .box {
+    margin-top: 20px;
+  }
+
+  #mobie-menu {
+    display: block;
+  }
+}
